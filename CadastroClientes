@@ -1,0 +1,37 @@
+#Faça um algoritmo para cadastrar clientes
+
+var
+
+nomes: vetor[1..10] de literal
+pesquisa: literal
+i: inteiro
+encontrado: logico
+
+
+inicio
+
+para i de 1 ate 10 faca
+     escreval("informe um nome a cadastrar")
+     leia(nomes[i])
+fimpara
+limpatela
+
+escreval ("informe um nome a pesquisar")
+leia (pesquisa)
+
+para i de 1 ate 10 faca
+     se nomes[i] = pesquisa entao
+        encontrado <- verdadeiro
+     senao
+        encontrado <- falso
+     fimse
+fimpara
+
+se encontrado = verdadeiro entao
+   escreval("Encontrado")
+senao
+     escreval("Não encontrado")
+fimse
+
+
+fimalgoritmo
