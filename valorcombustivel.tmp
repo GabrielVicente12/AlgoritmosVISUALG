@@ -1,0 +1,32 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 18/03/2024
+// Seção de Declarações 
+var
+tc:literal
+ct:inteiro
+valor_litro, valor_tanque:real
+
+inicio
+// Seção de Comandos
+
+   escreva("Digite o tipo de carro: G - Gasolina | A - Álcool: ")
+   leia(tc)
+   escreva("Digite a capacidade do tanque do carro: ")
+   leia(ct)
+
+   se (tc = "G") entao
+      escreval("Você escolheu um veículo Gasolina!!! ")
+   senao
+      escreval("Você escolheu um veículo Álcool!!! ")
+   fimse
+
+   escreva("Informe o valor do litro: ")
+   leia(valor_litro)
+
+   valor_tanque <- ct * valor_litro
+
+   escreval("O valor gasto para encher o tanque será: R$", valor_tanque:2:2)
+
+fimalgoritmo
